@@ -1,0 +1,43 @@
+<br>
+<br>
+<br>
+<h1>Create a Listing!</h1>
+
+
+<%= form_tag(listings_url, method: 'post') do %>
+
+  <div>
+    <%= label_tag :category_name %><br />
+    <%= text_field_tag :category_id %>
+  </div>
+
+  <div>
+    <%= label_tag :manufacturer %><br />
+    <%= text_field_tag :manufacturer_name %>
+  </div>
+
+  <div>
+    <%= label_tag :model_name %><br />
+    <%= text_field_tag :model_name %>
+  </div>
+
+  <div>
+    <%= label_tag :lenders_notes %><br />
+    <%= text_area_tag :lenders_description  %>
+   </div>
+
+   <div>
+    <%= label_tag :add_a_photo%><br />
+    <%= text_field_tag :photo_url %>
+  </div>
+
+  <div>
+    <%= label_tag :zip_code %><br />
+    <%= text_field_tag :zip_code %>
+  </div>
+
+  <br>
+  <div>
+    <%= submit_tag "List Your Product!" %>
+  </div>
+<% end %>

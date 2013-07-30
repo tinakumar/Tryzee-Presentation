@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tryzee</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <!-- <p>
+<%= link_to "Home", home_url %>
+<%= link_to "How it Works", how_it_works_url %>
+<%= link_to "Help", help_url %>
+<%= link_to "Start", start_url %>
+<%= link_to "About", about_url %>
+<%= link_to "Sign In", new_session_url%>
+<%= link_to "Sign Up", new_user_path %>
+<%= link_to "Manufacturers", manufacturers_path %>
+<%= link_to "Models", models_path %>
+<%= link_to "Categories", categories_path %>
+<%= link_to "Advanced Search!", new_search_url %>
+<%= link_to "Tryzee!", new_tryal_path %></p> -->
+</head>
+
+<body>
+
+  <img src="http://img16.imageshack.us/img16/8459/tryzeelogoborder2.png" class="logo" />
+<nav>
+<% if signed_in? %>
+  <ul>
+<%= link_to "Sign Out", signout_path, method: "delete" %>
+<% else %>
+    <li><%= link_to "Home  ", home_url %></li>
+    <li><%= link_to "How it Works  ", how_it_works_url %></li>
+    <li><%= link_to "Start  ", start_url %></li>
+    <li><%= link_to "Search!  ", searches_path %></li>
+    <li><%= link_to "Account  ", tryals_path %></li>
+    <li><%= link_to "About  ", how_it_works_url %></li>
+<% end %>
+    </li>
+  </ul>
+</nav>
+
+
+<p id="notice"><%= notice %></p>
+
+<div id="workspace">
+<%= yield %>
+</div>
+
+
+<footer>
+</footer>
+
+</body>
+</html>

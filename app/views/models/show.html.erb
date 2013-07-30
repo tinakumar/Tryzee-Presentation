@@ -1,0 +1,39 @@
+
+<br>
+<br>
+<br>
+<h1>Model #<%= @model.model_number %></h1>
+
+<p>
+  <b>Name:</b>
+  <%= @model.name %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%= @model.manufacturer.name %>
+</p>
+
+<p>
+<b>Decription:</b>
+ <td><%= @model.description %></td>
+</p>
+
+<p>
+<b>Photos:</b>
+ <td><%=image_tag(@model.photo_url, :width => "200", :height => "200") %></td>
+</p>
+<div style="text-align:center;">
+<span class="modelButton">
+  <%= link_to "Try this Product?", new_search_url(:model_id => @model.id) %>
+</span>
+</div>
+<br>
+<div style="text-align:center;">
+<span class="modelButton">
+  <%= link_to "Lend this Product?", new_listing_url(:model_id => @model.id) %>
+</span>
+</div>
+
+# <%= link_to 'Edit', edit_model_path(@model) %> |
+# <%= link_to 'Back', models_path %>

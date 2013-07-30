@@ -1,0 +1,69 @@
+
+<body>
+<!-- WORKSPACE -->
+<section class="one">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Welcome to Tryzee!</h1>
+
+  <form id="searchbox" action="">
+    <input id="search" type="text" placeholder="Type here">
+    <input id="submit" type="submit" value="Search">
+</form>
+
+</section>
+<br>
+<br>
+
+
+<section class="two">
+  <br>
+  <h1>How it works</h1>
+    <h2>The only short term trial service to let you earn cash on past purchases and rebates towards future ones.</h2>
+    <br>
+        <iframe width="550" seamless="0"  align="centered" height="400" src="http://www.youtube.com/embed/UhbPmJIDs9o" frameborder="0" allowfullscreen>
+    </iframe>
+
+<table>
+<tr>
+    <td class="myButton">
+      <%= link_to "Learn More", how_it_works_url %>
+    </td>
+
+    <br>
+    <br>
+
+      <td class="myButton">
+      <%= link_to "Get Started", start_url %>
+    </td>
+  </tr>
+</table>
+</section>
+
+<br>
+<br>
+
+<section class="three">
+  <h1>Tryzee Partnership Brands</h1>
+<br>
+<br>
+<table>
+  <tr>
+    <%#= @manufacturers.each do |m| %>
+      <!-- <td><%#= link_to image_tag(m.logo, :width => '150', :height => '100'), models_url(manufacturer: m.id) %></td> -->
+    <%# end %>
+
+    <td><%= link_to image_tag(@manufacturer_bugaboo.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_bugaboo.id) %></td>
+    <td><%= link_to image_tag(@manufacturer_bob.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_bob.id) %></td>
+    <td><%= link_to image_tag(@manufacturer_mutsy.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_mutsy.id) %></td>
+  </tr>
+  <tr>
+    <td><%= link_to image_tag(@manufacturer_4moms.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_4moms.id) %></td>
+    <td><%= link_to image_tag(@manufacturer_pegperego.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_pegperego.id) %></td>
+    <td><%= link_to image_tag(@manufacturer_firstyears.logo, :width => "150", :height => "100"), models_url(manufacturer: @manufacturer_firstyears.id) %></td>
+</table>
+</section>
+
+</body>

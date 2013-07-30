@@ -1,0 +1,44 @@
+<br>
+<br>
+<h1>Advanced Search</h1>
+
+  <%= form_for @search do |f| %>
+  <div class="field">
+    <td><%= f.label :keywords %><br />
+    <%= f.text_field :keywords %></td>
+  </div>
+<div class="actions"><%= f.submit "Search" %></div>
+
+<br>
+
+  <table class="CSSTableGenerator" >
+       <tr>
+ <div class="dropdown">
+    <td><%= f.label :category_id %><br />
+    <%= f.collection_select :category_id, Category.order(:name), :id, :name, include_blank: true %></td>
+  </div>
+
+   <div class="field">
+   <div class="dropdown">
+    <td><%= f.label :manufacturer_id %><br />
+    <%= f.collection_select :manufacturer_id, Manufacturer.order(:name), :id, :name, include_blank: true %></td>
+  </div>
+
+   <div class="dropdown">
+    <td><%= f.label :model_id %><br />
+  <%= f.collection_select :model_id, Model.order(:name), :id, :name, include_blank: true %></td>
+    </div>
+
+      <div class="field">
+   <td><%= f.label :location, "Location" %><br />
+    <%= f.text_field :zip_code, size: 10 %></td>
+      </tr>
+  </table>
+
+
+<br>
+<br>
+  <div class="mybutton">
+      <%= link_to "Search", search_url %>
+  <% end %>
+  </div>

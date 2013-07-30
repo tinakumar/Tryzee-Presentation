@@ -1,0 +1,59 @@
+<br>
+<br>
+<h1>Listing Manufacturers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Models</th>
+    <th>Rebate</th>
+    <th>Rebate description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @manufacturers.each do |manufacturer| %>
+  <tr>
+    <td><%= manufacturer.name %></td>
+    <td><%= manufacturer.category_id %></td>
+    <td><%= manufacturer.rebate %></td>
+    <td><%= manufacturer.rebate_description %></td>
+ <!--    <td><%= link_to 'Show', manufacturer %></td>
+    <td><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
+    <td><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<!--<%= link_to 'New Manufacturer', new_manufacturer_path %> -->
+
+<%= link_to 'Back', home_url%>
+
+<!-- 'TINA STUFF' -->
+<img src="http://www.toysrus.com/cms_widgets/19/84/1984474_assets/Bob_Strollers_Logo.gif" width="120" height="120" alt="BOB logo"/>
+
+<img src="http://mbeans.com/images/pages/manu/logos/Bugaboo-Strollers-Logo.png" width="120" height="120" alt="Bugaboo logo" />
+
+<img src="http://www.milehighmamas.com/files/2009/12/Mutsy-Webbutton-253x108-Logo2.jpg" width="100" height="100" alt="Mutsy logo" />
+
+<img src="http://www.stroller-envy.com/images/quinny-logo.jpg" width="150" height="150" alt="Quinny logo" />
+
+<img src="http://www.alongcomesababy.com/wp-content/uploads/2009/03/baby-jogger-logo3.jpg" width="150" height="150" />
+
+<img src="http://myweeview.com/wp-content/uploads/2009/11/jj-cole-collection-400x97.jpg" width="150" height="150" />
+
+<img src="http://uppababy.melissaspiegel.com/images/uppababyLogo.jpg" width="125" height="125" />
+
+<br />
+<p>
+  <b>Products:</b>
+  <ul>
+    <% @manufacturer.models.each do |mod| %>
+      <li><%= mod.name %></li>
+    <% end %>
+  </ul>
+</p>
+

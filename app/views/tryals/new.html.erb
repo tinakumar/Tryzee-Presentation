@@ -1,0 +1,41 @@
+<br>
+<br>
+<h1>Tryal Reservation!</h1>
+
+<%= form_for @tryal do |f| %>
+
+  <div>
+    <%= f.label :listing_number %><br />
+    <%= f.text_field :listing_id %>
+  </div>
+
+  <div>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+
+    <div>
+    <%= f.label :lender_id %><br />
+    <%= f.text_field :lender_id %>
+  </div>
+
+
+
+    <div>
+    <%= f.label :start_date %><br />
+    <%= f.text_field :start_at %>
+  </div>
+
+    <div>
+    <%= f.label :due_date %><br />
+    <%= f.text_field :due_at %>
+   </div>
+   <br>
+
+    <div class="myButton">
+      <%= link_to "Confirm Tryzee!", messages_url %>
+    </div>
+
+
+    add payment gem and set up payment field
+<% end %>

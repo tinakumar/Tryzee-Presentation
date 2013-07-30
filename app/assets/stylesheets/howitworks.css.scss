@@ -1,0 +1,21 @@
+body {
+  background-image:url('http://img211.imageshack.us/img211/9028/aa031455.jpg');
+  image-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color:yellow;
+  &:visited {
+    color:black;
+  }
+  &:hover {
+    color:black;
+    background-color: #0239d1;
+  }
+}
+
+// background-color: #0239d1;

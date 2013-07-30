@@ -1,0 +1,245 @@
+
+body {
+  font-family:normal 12px/1.5 "Futura W01 Bold",Courier,'Courier New';
+  background: white;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'arial';
+  text-shadow: 2px 2px 4px #6b6b77;
+  padding-right: 20px;
+  margin-top: 20px;
+  padding-top:10px;
+  text-align: center;
+  font-size: 38px;
+  color: #d10239;
+  line-height: 0.875em;
+  margin-left: 20px;
+
+  }
+
+h2 {
+    padding-top: 5px;
+    text-decoration: none;
+    padding-right: 10px;
+    color: gray;
+    text-align: center;
+    font-size: 22px;
+    margin-left: 20px;
+}
+a {
+  color:yellow;
+  text-decoration: none;
+  &:visited {
+    color:black;
+  }
+  &:hover {
+    color:black;
+    text-decoration: none;
+    background-color: #d10239;
+  }
+}
+
+header {
+width:100%;
+}
+
+// NEED TO FIX NAVIGATION
+
+nav{
+  display:inline-block;
+  margin: 0 auto;
+  margin-right: 25px;
+  text-shadow: 2px 2px 4px #6b6b77;
+  text-align: center;
+  font-size:16px;
+  height:1em;
+  line-height:2.5;
+  text-transform:uppercase;
+  width:100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+ul {
+  opacity:.5;
+  padding-bottom: 10px;
+  display:inline;
+  text-align: center;
+  align: center;
+  margin-right: 10px;
+}
+
+li {
+  display:inline-block;
+  background-color: white;
+  opacity: .5;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+  margin-right: 10px;
+}
+
+
+// nav {
+//   position:absolute;
+//   text-transform:uppercase;
+//   width:100%;
+//   display:block;
+//   background-color: white;
+//   background-position: fixed;
+//   height: 85px;
+//   padding-top: 5px;
+//   padding-right: 435px;
+//   padding-bottom: 45px;
+//   font-size:22px;
+//   text-align: right;
+//   margin-top: 0 auto;
+//   font-family: "arial";
+// }
+
+  // #header.nav ul li{position:absolute;top:0}
+  // #header .nav ul li.home{left:0}
+  // #header .nav ul li.howitworks{left:91px}
+  // #header .nav ul li.start{left:186px}
+  // #header .nav ul li.search{right:174px}
+  // #header .nav ul li.tryzee{right:174px}
+  // #header .nav ul li.account{right:83px}
+  // #header .nav ul li.about{right:0}
+
+// NAVIGATION ENDS
+
+.logo {
+  display: inline-block;
+  left: 30%;
+  margin: 0 auto;
+  // margin-left: -127px;
+  position: absolute;
+  top: 36px;
+  bottom: 50px;
+  padding-bottom:33px;
+  z-index: 5;
+  // float: left;
+  // display: inline-block;
+  // height: 150%;
+  // width: 45%;
+  // padding-right:5px;
+  // padding-left: 30px;
+  // margin: 0px;
+  // padding-bottom: 10px;
+}
+
+
+// GENERAL WORK SPACE
+div#workspace {
+  max-width:1200px;
+  margin-top: 20px;
+  padding: 40px;
+  margin-left: 10px;
+  background-color: #80ff00;
+  border: 15px solid #9dff9d;
+  border-radius: 10px;
+  margin: 0 auto;
+
+section {
+    max-height:800px;
+    max-width: 900px;
+    background-color:white;
+    border: 15px solid #ebebeb;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    font-family: "arial";
+    margin: 0 auto;
+  }
+}
+
+
+/* ----------------------- */
+
+// FOR HOME PAGE!!
+section.one {
+    display: center;
+    background-image: url('http://img5.imageshack.us/img5/9875/sectionone.jpg');
+    padding: 15px;
+    background-position: center;
+    background-repeat: none;
+    background-position: 0px 0px;
+    height: 550px;
+    font-family: "arial";
+}
+
+// SECOND SECTION
+section.two {
+    background-repeat: none;
+    background-position: left;
+    height: 760px;
+    margin-bottom: 0px;
+    font-family: "arial";
+}
+
+iframe {
+  padding: 20px;
+  border: 6px solid #d10239;
+  border-radius: 10px;
+  margin: auto;
+}
+
+// THIRD SECTION
+  section.three {
+    height:600px;
+    background-color:white;
+    border-width: 5px;
+    border-style: solid;
+    border-color: silver;
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    font-family: "arial";
+    margin: 0 auto;
+}
+
+  table {
+    margin: 0 auto;
+    border-spacing: 15px;
+}
+
+  td {
+    border: 3px solid #d10239;
+    padding: 60px 60px;
+    background-color:silver;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+.bugaboo-logo {
+    background-image:url('http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0022/0419/brand.gif') no-repeat;
+    display:block;
+    height:100px;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    width:460px;
+}
+
+/* ----------------------- */
+
+// FOOTER
+footer {
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+

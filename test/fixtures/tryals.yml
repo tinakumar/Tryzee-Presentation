@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  status: MyString
+  user_id: 1
+  lender_id: 1
+  listing_id: 1
+  start_at: 2013-06-05 12:35:33
+  due_at: 2013-06-05 12:35:33
+
+two:
+  status: MyString
+  user_id: 1
+  lender_id: 1
+  listing_id: 1
+  start_at: 2013-06-05 12:35:33
+  due_at: 2013-06-05 12:35:33

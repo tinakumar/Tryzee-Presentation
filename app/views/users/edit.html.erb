@@ -1,0 +1,17 @@
+<h1>Let's get to know you a little better....</h1>
+
+
+<%= form_for (@user) do |f| %>
+
+  First Name:
+  <%= f.text_field :first_name %>
+
+  Last Name:
+  <%= f.text_field :last_name %>
+
+  Zip Code:
+  <%= f.text_field :zip_code %>
+
+  <%= f.submit %>
+
+<% end %>

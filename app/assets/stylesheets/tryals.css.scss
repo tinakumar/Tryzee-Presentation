@@ -1,0 +1,24 @@
+// Place all the styles related to the Tryals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// background-color: c4fd09;
+
+// body {
+//   background-image: url('http://img827.imageshack.us/img827/9611/orangedot.jpg');
+//   image-repeat: no-repeat;
+//   padding: 0;
+//   margin: 0;
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 14px;
+// }
+
+a {
+  color:yellow;
+  &:visited {
+    color:black;
+  }
+  &:hover {
+    color:black;
+    background-color: #c4fd09;
+  }
+}

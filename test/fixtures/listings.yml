@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  model_id: 1
+  photo_url: MyString
+  category_id: 1
+  manufacturer_id: 1
+  lender_description: MyText
+  user_id: 1
+
+two:
+  model_id: 1
+  photo_url: MyString
+  category_id: 1
+  manufacturer_id: 1
+  lender_description: MyText
+  user_id: 1

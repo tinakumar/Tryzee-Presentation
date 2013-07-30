@@ -1,0 +1,17 @@
+<br>
+<br>
+<p id="Manufacturer"><%= @manufacturer.id %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @manufacturer.name %>
+</p>
+
+<p>
+  <b>Products:</b>
+  <ul>
+    <% @manufacturer.models.each do |model| %>
+      <li><%= model.name %></li>
+    <% end %>
+  </ul>
+</p>

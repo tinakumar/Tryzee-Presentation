@@ -1,0 +1,21 @@
+<h1>Hi <%= current_user.first_name %>! </h1>
+
+<div class="column1of2">
+
+<%= image_tag("http://3.bp.blogspot.com/-ZLdq5wobs-w/UY8eVPXwbKI/AAAAAAAAAJI/RSY20qLfOYw/s1600/01-mother-and-child.jpg", :width => "150", :height => "150") %>
+<br>
+<%= link_to "Ready to Try?", tryals_url %>
+<br>
+<%= link_to "Change your profile?", edit_user_path(current_user) %>
+<br>
+<%= link_to "Want To Search?", new_search_url %>
+</div>
+<div class="column2of2">
+<%= link_to "Send a message!", messages_url %>
+<br>
+<%= link_to "Review Tryal Activity", tryals_url %>
+<div>
+<br>
+<%= link_to "Lend a Product? First let's find it!", new_search_url %>
+<br>
+</div>

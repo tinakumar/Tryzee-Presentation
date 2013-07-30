@@ -1,0 +1,53 @@
+  <%= stylesheet_link_tag "tables.css", :media => "all" %>
+  <link rel="stylesheet" href="css3-progress-bar.css" />
+<br>
+<br>
+<br>
+<h1>Tryals</h1>
+
+
+
+ <p>Tryzee Status!</p>
+    <div class="bar_mortice">
+      <div class="progress green" style="width: 20%;"></div>
+      <div class="progress orange" style="width: 20%;"></div>
+      <div class="progress pink" style="width: 20%;"></div>
+      <div class="progress blue" style="width: 20%;"></div>
+      <div class="progress purple" style="width: 20%;"></div>
+    </div>
+<p>
+
+<table class"CSSTableGenerator">
+    <tr>
+      <td>Status</td>
+      <td>User</td>
+      <td>Lender</td>
+      <td>Product</td>
+      <td>Start at</td>
+      <td>Due at</td>
+    </tr>
+  </table>
+
+  <% @tryals.each do |tryal| %>
+    <tr>
+      <td><%= tryal.status %></td>
+      <td><%= tryal.user_id %></td>
+      <td><%= tryal.lender_id %></td>
+      <td><%= tryal.listing_id %></td>
+      <td><%= tryal.start_at %></td>
+      <td><%= tryal.due_at %></td>
+      <td><%= link_to 'Show', tryal_url(tryal) %></td>
+      <td><%= link_to 'Edit', edit_tryal_url(tryal) %></td>
+      <td><%= link_to 'Destroy', tryal_url(tryal), method: 'delete', data: { confirm: "Do you really want to delete this tryal?" } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+<br>
+<br>
+<div class="myButton">
+     <%= link_to 'New Tryal', new_tryal_path %>
+</div>
+

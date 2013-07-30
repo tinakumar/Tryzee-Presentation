@@ -1,0 +1,2 @@
+module TryalsHelper
+end

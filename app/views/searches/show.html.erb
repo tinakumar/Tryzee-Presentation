@@ -1,0 +1,13 @@
+<br>
+<br>
+<h1>Search Results</h1>
+
+ <div id="listings">
+ <% @search.listings.each do |p| %>
+  <%= link_to p.model_name, listing_url(p.id) %><br>
+  <% end %>
+</div>
+
+<br>
+<%= link_to 'Edit', edit_search_path(@search) %> |
+<%= link_to 'Back', new_search_url %>

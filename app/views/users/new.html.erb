@@ -1,0 +1,25 @@
+<h1 style="color:blue">Welcome to Tryzee! Join Us!</h1>
+
+
+<%= form_for(@user) do |f| %>
+
+  <div>
+    Email:
+    <%= f.text_field :email %><br />
+  </div>
+
+    <div>
+    Password:
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    Type it again:
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <%= f.submit "Sign Up!" %>
+  </div>
+
+<% end %>

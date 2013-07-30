@@ -1,0 +1,50 @@
+<br>
+<br>
+<link rel="stylesheet" href="css3-progress-bar.css" />
+
+<h1>Tryal #<%= @tryal.id %></h1>
+
+ <p>Tryal Status</p>
+    <div class="bar_mortice">
+      <div class="progress green" style="width: 20%;"></div>
+      <div class="progress orange" style="width: 20%;"></div>
+      <div class="progress pink" style="width: 20%;"></div>
+      <div class="progress blue" style="width: 20%;"></div>
+      <div class="progress purple" style="width: 20%;"></div>
+    </div>
+<p>
+
+
+  <b>Status:</b>
+  <%= @tryal.status %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @tryal.user_id %>
+</p>
+
+<p>
+  <b>Lender:</b>
+  <%= @tryal.lender_id %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @tryal.listing_id %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%= @tryal.start_at %>
+</p>
+
+<p>
+  <b>Due at:</b>
+  <%= @tryal.due_at %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_tryal_path(@tryal) %> |
+<%= link_to 'Back', tryals_path %>

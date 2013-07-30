@@ -1,0 +1,36 @@
+<br>
+<h1>Tryzee Item: </h1>
+
+<p>
+  <b>Model Name:</b>
+  <%= @listing.model_id %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%= @listing.manufacturer_id %>
+</p>
+
+<p>
+  <b>Model Number:</b>
+  <%= @listing.models.name %>
+</p>
+
+<p>
+  <b>Photo url:</b>
+  <%= @listing.photo_url %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @listing.description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @listing.category_name %>
+</p>
+
+<%= link_to "Like what you see? Time to Tryzee!", new_tryal_url(:listing_id => @listing.id ) %>
+
+<%= link_to "Lend this Product?", new_listing_url %>

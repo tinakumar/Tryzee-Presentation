@@ -1,0 +1,42 @@
+<head>
+  <%= stylesheet_link_tag "searches.css", :media => "all" %>
+  <%= stylesheet_link_tag "buttons.css", :media => "all" %>
+  <%= stylesheet_link_tag "main.css", :media => "all" %>
+  <%= stylesheet_link_tag "listings.css", :media => "all" %>
+</head>
+<br>
+<br>
+<!-- TINA STUFF -->
+<br>
+<h1>Search Results: BOB Ironman Stroller</h1>
+<section>
+<div class="column1of2">
+<h2>Product Info</h2><img src= "http://a4.res.cloudinary.com/hn2fdlzuu/image/upload/c_fill,g_faces,h_221,w_283/bob-ironman-stroller.png" width="300" height= "300"/>
+<br>
+<h3>Manufacturer Description:</h3>Lean and mean, this BOB is born to run. Selected to be the official stroller of the IRONMAN Triathlon. Easy, two-step folding, and lightweight frame for convenient transport and storage.
+<h3>Lender Description:</h3>When my son was around six months I was on the hunt for a great jogging stroller so he and I could workout together. Everyone said to get a BOB, but I'm so cheap. It goes against my core values to pay over $300 for a stroller! I'm so happy I didn't listen to my frugal voice on this purchase! This is an amazing stroller for running. I wouldn't want anything else. Plus if I can add a few extra runs in during the week while keeping my son safe and comfortable then I'm sold.
+<br>
+<br>
+<span class="listButton">
+      <%= link_to "Time to Tryzee!", new_tryal_path %>
+</span>
+</div>
+
+<div class="column2of2"> <h2>Lendor Info</h2><img src= "http://www.inhabitots.com/wp-content/uploads/2013/02/mothers-and-babies-share-cells-537x428.jpg" width="300" height="300" />
+<h3>Lender Bio:</h3>I'm a mother of 3 darling boys. I heard about Tryzee and decided to earn some money for the stroller I no longer use. I was sick of it gathering dust and moms should help each other.
+<h3>Lender Location:</h3>Heart of Chicago! Zip Code: 60601
+<h3>Lender Availability:</h3>I'm a stay at home mom so there is flexibility as far as the time for stroller pick up. I am also happy to answer any questions you might have about the Ironman stroller. I have had a great experience with it as you can see in my glowing review. :)
+<br>
+<br>
+</div>
+<br>
+<br>
+<div class="actionlinks">
+      <%= link_to "Time to Tryzee", new_tryal_path, class: "myButton" %>
+
+      <%= link_to "Message Me", new_message_path, class: "myButton" %>
+    </div>
+<br>
+</section>
+
+

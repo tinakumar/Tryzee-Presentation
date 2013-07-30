@@ -1,0 +1,36 @@
+<br>
+<br>
+<br>
+<h1>Listing models - Strollers!</h1>
+<h2>Click On a Photo To See More Information</h2>
+
+<table>
+  <tr>
+    <th>Photo url</th>
+    <th>Name</th>
+    <th>Manufacturer</th>
+    <th>Description</th>
+
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @models.each do |model| %>
+  <tr>
+    <td class="pict"><%=link_to image_tag(model.photo_url, :width => "250", :height => "250"), model_url(model.id) %></td>
+    <td class="locate"><%= model.name %></td>
+    <td class="locate"><%= model.manufacturer.name %></td>
+    <%#= model.model_number %>
+    <%#= model.category.name %>
+    <td class="descript"><%= model.description %></td>
+
+
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

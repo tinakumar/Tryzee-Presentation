@@ -1,0 +1,39 @@
+<h1>User</h1>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Password digest:</b>
+  <%= @user.password_digest %>
+</p>
+
+<p>
+  <b>Photo url:</b>
+  <%= @user.photo_url %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @user.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @user.longitude %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+<br>
+<br>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=13&markers=#{@user.latitude}%2C#{@user.longitude}" %>
